@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 
 import PlaceList from '../components/PlaceList';
 
+
 const DUMMY_PLACES = [
     {
       id: 'p1',
@@ -18,7 +19,7 @@ const DUMMY_PLACES = [
     },
     {
       id: 'p2',
-      title: 'Empire State Building',
+      title: 'Empi State Building',
       description: 'One of the most famous',
       imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_Cropped.jpg/220px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_Cropped.jpg',
       address: 'Ny, Usa, Ferdinand street',
