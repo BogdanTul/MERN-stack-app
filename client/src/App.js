@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
   Navigate,
   Routes
@@ -8,16 +8,22 @@ import {
 
 import Users from './user/pages/Users';
 import NewPlace from './places/pages/NewPlace';
+import MainNavigation from './shared/components/Navigation/MainNavigation';
+import UserPlaces from './places/pages/UserPlaces';
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" exact element={<Users />} />
-        <Route path="/places/new" exact element={<NewPlace />} />
-        <Route path='*' element={<Navigate to="/" replace />} />
-      </Routes>
-    </Router>
+    <BrowserRouter>
+      <MainNavigation />
+      <main>
+        <Routes>
+          <Route path="/" exact element={<Users />} />
+          <Route path="/places/new" exact element={<NewPlace />} />
+          <Route path="/:userId/places" exact element={<UserPlaces />} />
+          <Route path='*' element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 };
 
