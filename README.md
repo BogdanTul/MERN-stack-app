@@ -8,21 +8,14 @@ Using node v20.11.1 (npm v10.2.4)
 npm install
 ```
 
-## Run the app
+## Run the client app
 
 ```bash
-npm start
+cd client && npm start
 ```
 
-## Run the app in development mode
+## Run the server app
 
 ```bash
-npm run dev
+cd server && npm start
 ```
-
-## Run the app in production mode
-
-```bash
-npm run start
-```
-
